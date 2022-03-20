@@ -26,7 +26,7 @@ function [IDX,C,SUMD,K]=kmeans_opt(X,varargin)
 %%% clusters.
 %%% sebastien.delandtsheer@uni.lu
 %%% sebdelandtsheer@gmail.com
-%%% Thomas.sauter@uni.lu
+%%% Thomas.sauter@uni.lu 
 [m,~]=size(X); %getting the number of samples
 if nargin>1, ToTest=cell2mat(varargin(1)); else, ToTest=ceil(sqrt(m)); end
 if nargin>2, Cutoff=cell2mat(varargin(2)); else, Cutoff=0.95; end
